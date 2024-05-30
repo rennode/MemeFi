@@ -1,14 +1,14 @@
 #!/bin/bash
 
+# Clone repository
+echo "Clone Repo Dulu"
+git clone https://github.com/shamhi/MemeFiBot.git || { echo "Gagal dalam cloning repository."; exit 1; }
+
 # Meminta API_ID dan API_HASH dari pengguna
 echo "API_ID kalian: (ambil disini: https://my.telegram.org/auth?to=apps):"
 read API_ID
 echo "API_HASH kalian: (ambil disini: https://my.telegram.org/auth?to=apps):"
 read API_HASH
-
-# Clone repository
-echo "Clone Repo Dulu"
-git clone https://github.com/shamhi/MemeFiBot.git || { echo "Gagal dalam cloning repository."; exit 1; }
 
 # Install prerequisite
 echo "Install Prerequestion Dulu"
